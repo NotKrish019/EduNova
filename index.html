@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduNova - Ignite Your Mind</title>
+    <!-- Modern Web Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "eba0e3ad-deae-4454-baab-9df7900b9b67", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "c8e18b35-e0cb-4bc2-a54a-c72157949a88", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">EduNova.</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact" class="btn-primary">Join Now</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Master the Skills of <span class="gradient-text">Tomorrow</span></h1>
+            <p>Join the premier platform for limitless learning. Unlock your potential with expert-led courses in technology, design, and business.</p>
+            <div class="hero-buttons">
+                <a href="#courses" class="btn-primary">Explore Courses</a>
+                <a href="#about" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="glass-orb orb1"></div>
+            <div class="glass-orb orb2"></div>
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1000&auto=format&fit=crop" alt="Students collaborating">
+        </div>
+    </header>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <h2>Popular <span class="gradient-text">Categories</span></h2>
+        <div class="course-grid">
+            <div class="course-card">
+                <div class="card-icon">💻</div>
+                <h3>Web Development</h3>
+                <p>Master modern web frameworks, frontend and backend technologies.</p>
+                <a href="#" class="learn-more">Learn More &rarr;</a>
+            </div>
+            <div class="course-card">
+                <div class="card-icon">🎨</div>
+                <h3>UI/UX Design</h3>
+                <p>Create stunning interfaces and seamless user experiences.</p>
+                <a href="#" class="learn-more">Learn More &rarr;</a>
+            </div>
+            <div class="course-card">
+                <div class="card-icon">📊</div>
+                <h3>Data Science</h3>
+                <p>Learn machine learning, AI, and handle big data effectively.</p>
+                <a href="#" class="learn-more">Learn More &rarr;</a>
+            </div>
+            <div class="course-card">
+                <div class="card-icon">🚀</div>
+                <h3>Digital Marketing</h3>
+                <p>Grow businesses with SEO, SEM, and social media strategies.</p>
+                <a href="#" class="learn-more">Learn More &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats">
+        <div class="stat-item">
+            <h3 class="counter" data-target="500">0</h3>
+            <p>Premium Courses</p>
+        </div>
+        <div class="stat-item">
+            <h3 class="counter" data-target="50">0</h3>
+            <p>Expert Instructors</p>
+        </div>
+        <div class="stat-item">
+            <h3 class="counter" data-target="10000">0</h3>
+            <p>Active Students</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">EduNova.</div>
+            <p>Empowering the next generation of global leaders through accessible online education.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 EduNova Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
